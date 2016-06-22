@@ -1,5 +1,5 @@
-angular.module('CTRLS', ['SERVICES'])
+angular.module('hqbsCtrls', ['hqbsServices'])
 
-.controller('CTRLS', function($scope){
+.controller('hqbsCtrls', function($scope){
   $scope.in = "yes";
 })
