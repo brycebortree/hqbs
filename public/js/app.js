@@ -1,4 +1,7 @@
-var app = angular.module('hqbsApp', ['hqbsCtrls', 'ui.router']);
+var app = angular.module('hqbsApp', [
+  'hqbsCtrls', 
+  'ui.router',
+  'cloudinary']);
 
 app.config(['$stateProvider', 
   '$urlRouterProvider', 
