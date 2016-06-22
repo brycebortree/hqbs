@@ -1,1 +1,8 @@
 <h1>HQBS</h1>
+
+<h1>All Pics</h1>
+<div class="well" ng-repeat="pic in pics track by $index">
+  <a ng-href="/posts/{{post.id}}"><h2>{{post.title}}</h2></a>
+   <h3> by {{post.user.name}} </h3>
+</div>
+

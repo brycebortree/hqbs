@@ -30,13 +30,18 @@ app.config(['$stateProvider',
     templateUrl: 'views/newpost.html',
     controller: 'NewCtrl'
   })
-  .state('allposts', {
-    url: '/allposts',
-    templateUrl: 'views/allposts.html',
+  .state('showpic', {
+    url: '/pics/:id',
+    templateUrl: 'views/showpic.html',
+    controller: 'ShowCtrl'
+  })
+  .state('allpics', {
+    url: '/all',
+    templateUrl: 'views/allpics.html',
     controller: 'AllCtrl'
   });
 
-  
+
   // $httpProvider.interceptors.push('AuthInterceptor')
   $locationProvider.html5Mode(true);
 }]);
