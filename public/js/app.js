@@ -30,9 +30,9 @@ app.config(['$stateProvider',
     url: '/about',
     templateUrl: 'views/about.html',
   })  
-  .state('newpost', {
-    url: '/newpost',
-    templateUrl: 'views/newpost.html',
+  .state('newpic', {
+    url: '/thereareflowers',
+    templateUrl: 'views/newpic.html',
     controller: 'NewCtrl'
   })
   .state('showpic', {
@@ -40,11 +40,6 @@ app.config(['$stateProvider',
     templateUrl: 'views/showpic.html',
     controller: 'ShowCtrl'
   })
-  .state('allpics', {
-    url: '/all',
-    templateUrl: 'views/allpics.html',
-    controller: 'AllCtrl'
-  });
 
 
   // $httpProvider.interceptors.push('AuthInterceptor')
