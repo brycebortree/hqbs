@@ -1,0 +1,33 @@
+{
+  "name": "hqbs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brytree/angular-base.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brytree/angular-base/issues"
+  },
+  "homepage": "https://github.com/brytree/angular-base#readme",
+  "dependencies": {
+    "angular-ui-router": "^0.3.1",
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-jwt": "^3.4.0",
+    "express-session": "^1.13.0",
+    "jsonwebtoken": "^7.0.1",
+    "path": "^0.12.7",
+    "pg": "^5.2.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.23.3",
+    "sequelize-cli": "^2.4.0"
+  }
+}
