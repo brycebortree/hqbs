@@ -13,7 +13,7 @@ angular.module('hqbsCtrls', ['hqbsServices'])
   };
 
   $scope.createPost = function() {
-    Post.save($scope.post, function success(data) {
+    Pic.save($scope.post, function success(data) {
       $location.path('/myposts');
     }, function error(data) {
       console.log(data);
@@ -23,12 +23,12 @@ angular.module('hqbsCtrls', ['hqbsServices'])
 
 .controller('ShowCtrl', ['$scope', '$location', '$stateParams', '$state', 'Comment', 'Post', 'Auth', 
   function($scope, $location, $stateParams, $state, Comment, Post, Auth){
-  $scope.post = {};
+  $scope.pic = {};
   $scope.Auth = Auth;
 
 
-  Post.get({id: $stateParams.id}, function success(data) {
-    $scope.post = data.post;
+  Pic.get({id: $stateParams.id}, function success(data) {
+    $scope.pic = data.pic;
     $scope.user = data.user;
     $scope.comments = data.comments;
     console.log(data);
